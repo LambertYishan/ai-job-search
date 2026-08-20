@@ -19,9 +19,76 @@ Follow these steps **in order**.
 
 - Nothing → list open applications and ask which one to update
 - A company name (optionally with a role), e.g. `/outcome acme` or `/outcome acme ml engineer` → target that application
+- A batch applied update from the latest displayed scrape/rank list, e.g. `/outcome applied 1 2 3 from last scrape`, `/outcome applied 1,2,3`, `/outcome mark 1 3 5 as applied`, or "I applied to jobs 1, 3, and 5 from the last scrape" → enter the **Batch Applied Branch** below
 - `followup` → enter the follow-up branch (Step 2b) over every quiet open application, using the default threshold of **10 days**
 - `followup <N>`, e.g. `/outcome followup 14` → follow-up branch with an N-day threshold
 - `followup <company>`, e.g. `/outcome followup acme` → draft a follow-up for that application now, regardless of threshold
+
+---
+
+## Batch Applied Branch - Numbered Jobs from Last Scrape/Rank
+
+Use this branch before the one-job Step 1 when the user's message both indicates `applied`/`mark ... as applied` and includes displayed job numbers. Natural variants all normalize to the same operation:
+
+- `/outcome applied 1 2 3 4 from last scrape`
+- `/outcome applied 1,2,3,4`
+- `/outcome mark 1 3 5 as applied`
+- "I applied to jobs 1, 3, and 5 from the last scrape"
+
+### Source of Numbers
+
+Resolve numbers only against `job_scraper/last_results.json`, written by `/scrape` or `/rank` when they last presented a numbered result list. Never infer numbering from `job_scraper/seen_jobs.json` object order, because that order is not the displayed list contract.
+
+If `job_scraper/last_results.json` is missing, malformed, stale relative to what the user appears to reference, or lacks the requested displayed numbers, stop and ask for clarification. Do not guess.
+
+### Preview and Safety
+
+1. Parse the requested numbers, accepting spaces, commas, and "and". If the message includes an explicit date (`YYYY-MM-DD`), use that as the application date; otherwise use today's date.
+2. Run the dry-run helper:
+   ```bash
+   python tools/batch_outcome_applied.py "<original user text>" --today YYYY-MM-DD --dry-run
+   ```
+3. Show the proposed changes before writing:
+   ```markdown
+   | # | Company | Title | Current status -> New status |
+   |---|---------|-------|------------------------------|
+   | 1 | ... | ... | (new row) -> applied |
+   ```
+4. Stop and ask for confirmation if any selected number is missing, ambiguous, duplicated, or maps to an existing tracker row whose status is later than `applied` (`interview`, `offer`, `hired`, `rejected`, `no_response`, `offer_declined`, `withdrawn`). A later-stage row must not be downgraded automatically.
+5. For a clean unambiguous batch, proceed without per-job prompts after showing the preview.
+
+### Tracker Writes
+
+Use `tools/batch_outcome_applied.py` for the write:
+
+```bash
+python tools/batch_outcome_applied.py "<original user text>" --today YYYY-MM-DD
+```
+
+The helper updates only `job_search_tracker.csv` and preserves the existing tracker schema:
+
+```text
+date,company,sector,role,role_type,channel,status,contact_person,fit_rating,notes,cv_file,cover_letter_file,source,deadline
+```
+
+For every selected job:
+
+- If no matching row exists, append a row with `status=applied`, `date=<application date>`, `company`, `role`, `source` URL, `deadline`, portal/channel, and fit/rank data where available.
+- If a matching row exists with `status=drafted`, update it to `applied`, set `date` to the actual application date, append a dated batch note, and preserve `cv_file`, `cover_letter_file`, archive paths, and any existing fields.
+- If a matching row already has `status=applied`, leave it unchanged so re-running the same batch is idempotent.
+- If a matching row has a later-stage or final status, do not downgrade it; flag it for manual review.
+- Do not create duplicate rows for the same company+role or source URL.
+- Do not delete, recreate, or rely on `seen_jobs.json` for application status. The tracker remains the source of truth for applications.
+
+After writing, report:
+
+- how many rows were created
+- how many rows were updated
+- how many rows were unchanged or flagged
+- the resulting count of tracker rows whose status is `applied`
+- that `job_search_tracker.csv` was parsed with the standard header used by `/html-report`, `/outcome`, `/interview`, and `/gmail-sync`
+
+Then stop. Do not continue into the one-job outcome flow unless the user asks to record a later outcome for a specific application.
 
 ---
 

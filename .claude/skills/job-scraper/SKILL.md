@@ -109,6 +109,7 @@ fragment link.
 For every candidate:
 - Skip if the URL or company+title combo already exists in `seen_jobs.json`
 - Skip if the company+role already appears in `job_search_tracker.csv`
+- Skip internships unless the posting explicitly says it is an off-cycle internship starting in January 2027. Treat Summer 2027 internships, later-start internships, and internships with no stated January 2027 off-cycle start as `skipped`, not as low-fit candidates.
 
 ### Step 2.5: Mass-Posting Detection (within this run)
 
@@ -123,6 +124,8 @@ For each new job, do a rapid fit check (NOT the full evaluation from `04-job-eva
 - **High match**: Role directly involves your core skills
 - **Medium match**: Role is adjacent to your experience
 - **Low match**: Role requires significant skills you lack
+
+**Internship timing override:** before assigning a match level, check whether the posting is an internship. Internship postings are out of scope unless they explicitly say they are off-cycle internships starting in January 2027. Do not present Summer 2027 internships, later-start internships, or internships with no stated January 2027 off-cycle start.
 
 **Language override:** before assigning a match level, check the posting against `04-job-evaluation.md`'s Language Gate (a required language you haven't declared at all in your CLAUDE.md Languages table). A required language that's entirely undeclared overrides skill fit: mark it **Low** regardless of how well the skills align, and name it in the highlight bullets so it isn't buried under an otherwise-good-looking match. A **declared** language at a requirement that reads higher than your declared level is *not* an override — score fit normally, but add a red-flag bullet under that job's highlights (Step 5) quoting the posting's requirement next to your declared level, so the gap is visible without being auto-downgraded.
 
@@ -180,6 +183,41 @@ titled "AI Program Manager" becomes `"<Company Name> AI Program Manager"`.
 Both links are for the user to open and browse themselves - never fetch or scrape the
 LinkedIn people-search result pages programmatically. Never fabricate contacts or claim a
 specific person was found; these are search links, not results.
+
+### Step 4.6: Persist Last Displayed Results
+
+Before Step 5 presents the numbered table, write the exact displayed list and order to
+`job_scraper/last_results.json`. This file is the stable numbering contract used by
+`/outcome applied 1 2 3 from last scrape`; do not make `/outcome` infer numbering from
+`seen_jobs.json` object order.
+
+Persist only rows that will actually appear in the numbered Step 5 table. Excluded,
+skipped, duplicate, expired, or hidden rows do not get display numbers. Use this schema:
+
+```json
+{
+  "generated_at": "YYYY-MM-DDTHH:MM:SS",
+  "source": "scrape",
+  "results": [
+    {
+      "displayed_number": 1,
+      "job_id": "<portal id, if available>",
+      "company": "...",
+      "title": "...",
+      "url": "...",
+      "source_portal": "linkedin-search",
+      "fit": "high",
+      "rank_score": null,
+      "rank_verdict": null,
+      "deadline": "YYYY-MM-DD or null"
+    }
+  ]
+}
+```
+
+Overwrite the file on every `/scrape` run that presents a numbered list. If no jobs are
+presented, write an empty `results` array with `source: "scrape"` so later `/outcome`
+calls can fail clearly instead of resolving stale numbers.
 
 ### Step 4.75: Portal Health Check
 
