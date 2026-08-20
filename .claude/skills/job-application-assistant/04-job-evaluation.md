@@ -30,6 +30,32 @@ If the candidate's permit also constrains *hours* or *start date* (a student vis
 
 A role that fails this gate is not scored and not drafted. Everything below applies only to roles that pass it.
 
+### Immigration / Work Authorization Policy Override
+
+For Lambert's US search, immigration status and sponsorship are not automatic job-discovery or ranking exclusions. Do not reject an otherwise strong role merely because sponsorship information is missing.
+
+Use hard eligibility exclusions only when the posting names a legal requirement the candidate cannot satisfy, such as U.S. citizenship, permanent residency, export-control eligibility, or security clearance. Quote the exact wording and flag it clearly.
+
+If an employer explicitly states "no current or future sponsorship," "we do not sponsor," or similar, mark the role with **SPONSORSHIP RISK** and continue scoring unless the user says to exclude it. Do not silently remove it.
+
+Do not proactively disclose immigration details in CVs, cover letters, or free-text fields unless the application specifically asks. Never invent immigration status, citizenship, permanent residence, visa category, work authorization, or sponsorship eligibility.
+
+#### Work-Authorization Form Answer Policy
+
+Answer only according to the exact wording of the form question. Never automatically submit an application containing an immigration or work-authorization answer that has not been mapped unambiguously to these rules.
+
+| Form question | Handling |
+|---------------|----------|
+| "Are you currently authorized to work in the United States?" | Answer **YES** only if the candidate currently has valid employment authorization for the position. If current authorization is not confirmed in the profile, flag for manual review. |
+| "Do you currently require employer sponsorship to work in the United States?" | Answer **NO** only if the candidate can begin and continue working under current independent work authorization without employer sponsorship at the time of hire. Otherwise flag for manual review. |
+| "Will you now or in the future require sponsorship for employment visa status?" | Do not guess and do not answer falsely. If future sponsorship need is not clearly and truthfully answerable from confirmed profile data, flag for manual review before submission. |
+| "Will you require sponsorship in the future?" | Do not guess and do not answer falsely. If future sponsorship need is not clearly and truthfully answerable from confirmed profile data, flag for manual review before submission. |
+| "Are you authorized to work permanently / indefinitely in the United States without sponsorship?" | Do not infer YES from temporary employment authorization. Answer according to the candidate's actual confirmed status; otherwise flag for manual review. |
+| Combined current-authorization and future-sponsorship question | Answer each component truthfully according to its wording. If any component is ambiguous or unsupported by confirmed profile data, flag for manual review. |
+| Ambiguous, unusual, or nonstandard wording | **MANUAL REVIEW.** Do not guess. |
+
+Sponsorship should be tracked separately from job-fit scoring. A role with sponsorship uncertainty can still be a strong technical and career fit; surface the risk clearly and let the candidate decide whether to proceed.
+
 ## Language Gate — run before scoring
 
 No dimension or gate anywhere in this framework currently checks a posting's language requirements against what the candidate actually speaks - it is not one of the five Scoring Dimensions below, not a field `/scrape` or `/rank` track, and not something `/apply`'s language detection (Step 1, which already extracts a posting's required language generically) has anywhere to report to. This gate adds that check, structured the same way as the Eligibility Gate above: read the posting, classify against profile data, and treat a hard mismatch as FAIL before scoring.
@@ -60,9 +86,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Quantitative modeling, risk modeling, Python-based research pipelines, financial mathematics, machine learning and statistical modeling, portfolio simulation, CECL forecasting, prepayment modeling, survival analysis, stochastic interest-rate modeling, Monte Carlo simulation.
+**Moderate match areas:** AWS-based model workflow support, Snowflake analytics, commercial banking operations, AI agentic workflows, Microsoft Power Platform, Copilot Studio, ESG reporting, executive reporting.
+**Weak match areas:** Primarily application/web-development software engineering, senior people-management roles, non-quantitative operations/reporting roles, and non-finance domain experience unless the work clearly involves data, ML, AI, quantitative systems, or research infrastructure.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +100,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Quantitative finance, financial mathematics, risk modeling, banking analytics, mortgage/prepayment modeling, systematic trading research, portfolio simulation.
+**Moderate:** Cloud-supported ML workflows, AI workflow automation, commercial banking business exposure, ESG reporting, technical consulting around analytical models.
+**Entry-level:** Generalist software engineering, non-finance data science domains, product analytics outside financial services, production ML platform engineering.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +117,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- United States full-time roles: PASS.
+- Remote or hybrid within the United States: PASS.
+- Onsite roles in strong quantitative/financial/technical markets: PASS if the opportunity is strong enough to justify relocation.
+- Non-US roles: FAIL.
+- Frequent international travel: FLAG.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +134,38 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Build a career across quantitative finance, risk modeling, data science, machine learning, and financial analytics.
+- Work on roles where Python, statistics, modeling, machine learning, optimization, or quantitative finance are core responsibilities.
+- Stay open to multiple job-title families when the underlying work is quantitative, analytical, financial, data, ML, AI, or research-infrastructure focused.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: statistical and predictive modeling, financial/risk modeling, machine learning, model development and validation, quantitative research, portfolio/risk analytics, credit and prepayment modeling, forecasting, scenario analysis, data/model pipelines, optimization, and Python-based research or production workflows.
+- Tasks that drain: primarily manual reporting, operations, administrative work, or application/web development where data, ML, AI, quantitative systems, or research infrastructure are not meaningful parts of the role.
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: No hard salary minimum for initial discovery; consider market-competitive compensation during ranking, but do not exclude strong early-career roles solely because salary is missing.
+- **Flexibility**: United States only; onsite, hybrid, and remote are all acceptable; relocation is acceptable for sufficiently strong opportunities.
+- **Professional development**: Prioritize early-career or lower-experience full-time roles with substantive quantitative, analytical, financial, data, ML, or AI work.
+
+### Search and Ranking Strategy
+
+Do not force the candidate into a single job-title category. Search and rank across functional buckets, then judge postings by actual responsibilities and requirements.
+
+Relevant titles may include, but are not limited to: Risk Analyst, Quantitative Analyst, Quantitative Finance Analyst, Quantitative Risk Analyst, Risk Modeler, Model Development Analyst, Credit Risk Analyst, Credit Risk Modeler, Model Risk Analyst, Model Validation Analyst, Data Scientist, Financial Data Scientist, Treasury Analytics Analyst, ALM / Balance Sheet Analytics Analyst, Portfolio Analytics Analyst, Quantitative Research Analyst, Investment Analytics Analyst, Machine Learning Engineer, AI Engineer, Applied Scientist, Data Engineer, and Analytics Engineer.
+
+Include a role when the underlying work involves Python, modeling, statistics, machine learning, financial risk, optimization, quantitative research, data pipelines, AI, or financial analytics, even if the title is broad or nonstandard.
+
+Avoid software-engineering roles that are primarily application or web development unless the posting meaningfully involves data, ML, AI, quantitative systems, or research infrastructure.
+
+Experience filter:
+- 0-2 years required: strong target.
+- 3 years required: target.
+- 4 years required: stretch, still include.
+- 5 years required: selective stretch, include only when skills strongly match.
+- 6+ years required: normally exclude unless the posting clearly indicates flexibility.
+
+Do not automatically convert a master's degree into professional experience, and do not treat two master's degrees as four years of experience. Count education as an experience substitute only when the posting explicitly allows it.
 
 ### 6. Salary Benchmark (Optional)
 

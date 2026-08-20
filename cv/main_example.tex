@@ -1,4 +1,4 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Lambert Li
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
@@ -33,7 +33,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Lambert Li - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -43,13 +43,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Lambert}{Li}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Raleigh / Apex, NC, United States}{}{}
+\phone[mobile]{336-744-6034}
+\email{belambert2002@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/lambertliy}{LinkedIn}, \href{https://github.com/LambertYishan}{GitHub}}
 
 \begin{document}
 
@@ -60,7 +60,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Quantitative model developer with training in financial mathematics, business analytics, and mathematical economics. Experienced in Python-based research pipelines for risk modeling, prepayment modeling, systematic trading, portfolio simulation, and model validation. Brings applied experience across banking analytics, machine learning, survival analysis, Monte Carlo simulation, and financial data workflows.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +70,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Quantitative Modeling}: Logistic regression, OLS, Lasso, Elastic Net, decision trees, random forest, LightGBM, XGBoost, Cox models, GAMs, splines, Hidden Markov Models.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Financial Risk and Analytics}: CECL forecasting, credit risk, prepayment modeling, survival analysis, time-series analysis, ALM concepts, treasury analytics, portfolio optimization, backtesting.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Machine Learning and Research}: PyTorch, reinforcement learning, Soft Actor-Critic, NLP exposure, factor models, forecasting, model validation, feature engineering.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Programming and Data}: Python, SQL, R, pandas, NumPy, scipy, scikit-learn, statsmodels, lifelines, xgboost, Gymnasium, matplotlib.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Platforms and Tools}: Snowflake, AWS EC2/S3/Lambda/SageMaker, Power BI, Microsoft Power Platform, Copilot Studio, Claude Code, Codex, Harness, GitHub, Bloomberg Terminal.
 
 \end{itemize}
 
@@ -90,32 +90,50 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jun 2026 - Aug 2026}{Quantitative Modeling Intern}{SouthState Bank}{Raleigh, NC}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Developed loan-level prepayment models for CECL forecasting, connecting borrower behavior, loan characteristics, and macroeconomic drivers with forward-looking balance projections.
+    \item Evaluated panel time-series, logistic regression, Cox survival, splines, generalized additive, LightGBM, and EBM models to compare linear and nonlinear assumptions.
+    \item Performed Snowflake-based data cleaning, feature engineering, diagnostics, backtesting, and hypothesis testing using Python and SQL.
+    \item Created executive reports and presented final model diagnostics to senior leadership for future business implementation.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jan 2026 - May 2026}{Quantitative Research Engineer}{SNTIMNT.AI}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Refactored reinforcement-learning trading pipeline logic from notebooks into reusable modules for agents, networks, replay buffers, environments, and training/testing utilities.
+    \item Built AWS-based research and deployment workflows using EC2, S3, Lambda, and SageMaker for data ingestion, retraining, deployment, and monitoring.
+    \item Designed a Hidden Markov Model filter to classify market environments, achieving 0.83 out-of-sample regime identification recall.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Aug 2025 - Dec 2025}{Machine Learning Intern}{SNTIMNT.AI}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Developed Soft Actor-Critic reinforcement-learning models for systematic crypto trading, including feature engineering, hyperparameter tuning, backtesting, and validation.
+    \item Integrated sentiment, whale-tracking, and market signals into strategy research and evaluated performance against S\&P 500 and BTC buy-and-hold benchmarks.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Aug 2025 - Dec 2025}{Graduate Model Developer}{North Carolina State University}{Raleigh, NC}{}{\vspace{1pt}
+\begin{itemize}
+    \item Modeled mortgage repayment behavior, default risk, and MBS cash-flow timing using Cox proportional hazard models and Monte Carlo short-rate paths.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Jun 2025 - Aug 2025}{Quantitative Analytics Intern}{SDIC Securities}{Shenzhen, China}{}{\vspace{1pt}
+\begin{itemize}
+    \item Implemented and calibrated Vasicek and CIR stochastic interest-rate models using maximum likelihood estimation on financial datasets.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Sep 2024 - May 2025}{Quantitative Research Assistant}{Wake Forest University School of Business}{Winston-Salem, NC}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a Python simulation framework for tax-efficient ETF portfolio replication using 2007-2023 market data, wash-sale constraints, tax-loss harvesting logic, and Monte Carlo simulation.
 \end{itemize}}}
 
 \end{itemize}
@@ -128,14 +146,20 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{Jul 2025 - Dec 2026 expected}{Master of Financial Mathematics}{North Carolina State University}{Raleigh, NC}{}{\vspace{1pt}
+GPA: 3.889/4.0. Topics include financial calculus, Monte Carlo methods, financial risk analysis, options and derivatives pricing, probability and stochastics, commercial banking risk management, and quantitative trading strategies.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{Jul 2024 - May 2025}{Master of Science in Business Analytics}{Wake Forest University School of Business}{Winston-Salem, NC}{}{\vspace{1pt}
+Graduated with Distinction. GPA: 3.9/4.0. Topics include business analytics, data analytics, and data mining.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{Completed May 2024}{Bachelor of Science in Mathematical Economics, minor in Psychology}{Wake Forest University}{Winston-Salem, NC}{}{\vspace{1pt}
+Coursework and academic background in mathematical economics and psychology.
 }}
 
 \end{itemize}
@@ -147,27 +171,19 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item English (fluent / professional working proficiency), Mandarin Chinese (native).
 \end{itemize}
 
 % ============================================================
 %     PUBLICATIONS (optional)
 % ============================================================
 
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Master of Science in Business Analytics with Distinction} -- Wake Forest University (2025).}
+\item{\textbf{FRM Part I Passed}; FRM Part II Candidate, November 2026.}
+\item{\textbf{Bloomberg Market Concepts and Bloomberg ESG}; C++ for Financial Engineering, Baruch College.}
 \end{itemize}
 
 % ============================================================

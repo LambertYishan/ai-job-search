@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Lambert Li
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Lambert Li, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +16,118 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Legal Name:** Yishan Li
+- **Preferred / Professional Name:** Lambert Li
+- **Location:** Raleigh / Apex, NC, United States (search nationally across US onsite, hybrid, and remote roles; willing to relocate for a sufficiently strong full-time opportunity)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | English | Fluent / professional working proficiency |
+  | Mandarin Chinese | Native |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Master of Financial Mathematics student at North Carolina State University; expected graduation December 2026
+- **LinkedIn headline:** "Quantitative Model Dev | FRM Part II in-progress | MFM, MSBA"
+- **Email:** belambert2002@gmail.com
+- **Phone:** 336-744-6034
+- **LinkedIn:** www.linkedin.com/in/lambertliy
+- **GitHub:** https://github.com/LambertYishan
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Master of Financial Mathematics** (Jul 2025-Dec 2026 expected) - North Carolina State University
+  - GPA: 3.889/4.0
+  - Topics: financial calculus, Monte Carlo methods, financial risk analysis, options and derivatives pricing, probability and stochastics, commercial banking risk management, quantitative trading strategies
+- **Master of Science in Business Analytics** (Jul 2024-May 2025) - Wake Forest University School of Business
+  - Graduated with Distinction; GPA: 3.9/4.0
+  - Topics: business analytics, data analytics, data mining
+- **Bachelor of Science in Mathematical Economics, minor in Psychology** (completed May 2024) - Wake Forest University
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Quantitative Modeling Intern** (Jun 2026 - Aug 2026) - **SouthState Bank** (Raleigh, NC)
+  - Developed loan-level prepayment models for CECL forecasting using borrower, loan, and macroeconomic drivers.
+  - Evaluated panel time-series, logistic regression, Cox survival, splines, generalized additive, LightGBM, and EBM approaches.
+  - Performed Snowflake-based data cleaning, feature engineering, diagnostics, backtesting, and executive reporting with Python and SQL.
+- **Quantitative Research Engineer** (Jan 2026 - May 2026) - **SNTIMNT.AI** (Remote)
+  - Refactored reinforcement-learning trading pipeline logic into reusable agent, network, replay-buffer, environment, and training/testing modules.
+  - Built AWS-based research and deployment workflows using EC2, S3, Lambda, and SageMaker.
+  - Designed an HMM market-regime filter with 0.83 out-of-sample regime identification recall.
+- **Machine Learning Intern** (Aug 2025 - Dec 2025) - **SNTIMNT.AI** (Remote)
+  - Developed Soft Actor-Critic reinforcement-learning models for systematic crypto trading.
+  - Integrated sentiment, whale-tracking, and market signals into strategy research and benchmark evaluation.
+- **Graduate Model Developer** (Aug 2025 - Dec 2025) - **North Carolina State University** (Raleigh, NC)
+  - Modeled mortgage repayment behavior, default risk, and MBS cash-flow timing using Cox models and Monte Carlo short-rate paths.
+- **Quantitative Analytics Intern** (Jun 2025 - Aug 2025) - **SDIC Securities** (Shenzhen, China)
+  - Implemented and calibrated Vasicek and CIR stochastic interest-rate models using maximum likelihood estimation.
+- **Quantitative Research Assistant** (Sep 2024 - May 2025) - **Wake Forest University School of Business** (Winston-Salem, NC)
+  - Built a Python simulation framework for tax-efficient ETF portfolio replication using 2007-2023 market data.
+  - Implemented wash-sale constraints, tax-loss harvesting logic, Cholesky decomposition, Monte Carlo simulation, and constrained optimization.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, SQL, quantitative/statistical modeling, machine learning, risk modeling, financial modeling
+- **Secondary:** CECL/ACL, credit risk, prepayment modeling, survival analysis, time-series analysis, portfolio optimization, model validation, backtesting, NLP, factor models
+- **Domain:** quantitative finance, financial mathematics, banking analytics, systematic trading, portfolio/risk analytics, ALM, treasury analytics
+- **Software:** Snowflake, AWS EC2/S3/Lambda/SageMaker, Power BI, Microsoft Power Platform, Copilot Studio, Claude Code, Codex, Harness, GitHub, Bloomberg Terminal, Moody's Data Buffet
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **FRM Part I Passed**
+- **FRM Part II Candidate** - November 2026
+- **C++ for Financial Engineering** - Baruch College
+- **Bloomberg Market Concepts**
+- **Bloomberg ESG**
+- **SouthState Infoship Program / Commercial Banking** - SouthState Bank, issued May 2026
 
 ### Publications
 <!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None listed in source documents.
 
 ### Awards
 <!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Master of Science in Business Analytics with Distinction - Wake Forest University (2025)
 
 ### Behavioral Profile
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Structured problem solving** - Turns uncertain quantitative problems into testable workflows, modular systems, and documented model diagnostics.
+- **Self-motivated learning** - Willing to ask questions, refine methods, and learn through iteration in ambiguous environments.
+- **Strengths:** quantitative curiosity, analytical discipline, finance-aware technical thinking, business-context communication.
+- **Growth areas:** production software engineering ownership beyond research/deployment support, and breadth outside finance.
+- **Thrives in:** roles combining quantitative finance, data, modeling, validation, and business interpretation.
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Quantitatively intensive work that builds, tests, validates, or applies statistical, financial, machine-learning, and optimization models to real business or investment problems.
+- Python-based research and production workflows where coding and quantitative analysis are meaningful parts of the job.
+- Model development, validation, forecasting, scenario analysis, portfolio/risk analytics, credit and prepayment modeling, and quantitative research.
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Banks and financial institutions: quantitative analytics, credit risk, CECL/ACL, treasury analytics, ALM, model development, model validation.
+- Asset managers, hedge funds, investment firms, and fintech: quantitative research, portfolio analytics, investment analytics, systematic trading, risk analytics.
+- Insurance, financial-data/analytics companies, technology companies, and quantitative consulting teams: data science, ML, AI, financial analytics, research infrastructure.
+- Search strategy: do not force the profile into one job-title category. Search across functional buckets and rank by actual responsibilities and requirements.
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Non-US roles.
+- Internships, talent communities, expired listings, generic career pages, recruiting articles, or non-current postings when the goal is full-time discovery.
+- Roles that are primarily manual reporting, operations, administrative work, or application/web development without meaningful data, ML, AI, quantitative systems, or research-infrastructure work.
+- Normally exclude 6+ years required, Staff, Principal, Director, Senior Manager, and clearly senior VP/management roles unless the posting explicitly indicates flexibility.
+- Do not automatically convert a master's degree into professional experience unless the posting explicitly allows that substitution.
+
+### Work Authorization Policy
+- Do not use immigration status as an automatic job-discovery or ranking exclusion unless the role has a hard legal eligibility requirement the candidate cannot satisfy, such as U.S. citizenship, permanent residency, export-control eligibility, or security clearance.
+- Do not proactively disclose immigration details unless the application specifically asks.
+- Sponsorship is tracked separately from job-fit scoring. Do not reject an otherwise strong role merely because sponsorship information is missing.
+- If an employer explicitly states "no current or future sponsorship," mark the role with a **SPONSORSHIP RISK** flag rather than silently removing it, and let the candidate decide whether to proceed.
+- Never invent immigration status, citizenship, permanent residence, visa category, work authorization, or sponsorship eligibility.
+- Never automatically submit an application containing an immigration/work-authorization answer that has not been mapped unambiguously to the rules in `04-job-evaluation.md`.
+- If wording is ambiguous, unusual, or does not cleanly fit the known categories, flag it for manual review before submission.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

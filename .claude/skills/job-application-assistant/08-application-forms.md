@@ -24,6 +24,25 @@ Trigger it whenever a posting or portal asks for any of:
 
 All accuracy rules from `05-cv-templates.md` and `03-writing-style.md` apply unchanged.
 
+## Field type: immigration / work authorization
+
+Trigger this section whenever a posting or portal asks immigration, work-authorization, or sponsorship questions.
+
+This is not a persuasion field. Do not proactively disclose immigration details unless the application specifically asks. Never invent immigration status, citizenship, permanent residence, visa category, work authorization, or sponsorship eligibility.
+
+Answer only according to the exact wording of the form question and the policy in `04-job-evaluation.md`'s "Work-Authorization Form Answer Policy". Do not automatically submit an application containing an immigration or work-authorization answer that has not been mapped unambiguously to that policy.
+
+Common handling:
+- "Are you currently authorized to work in the United States?" -> Answer YES only if current valid employment authorization for the position is confirmed.
+- "Do you currently require employer sponsorship to work in the United States?" -> Answer NO only if the candidate can begin and continue working under current independent work authorization without employer sponsorship at the time of hire.
+- "Will you now or in the future require sponsorship for employment visa status?" -> Do not guess and do not answer falsely. If future sponsorship need is not clearly and truthfully answerable from confirmed profile data, flag for manual review before submission.
+- "Will you require sponsorship in the future?" -> Do not guess and do not answer falsely. If future sponsorship need is not clearly and truthfully answerable from confirmed profile data, flag for manual review before submission.
+- "Are you authorized to work permanently / indefinitely in the United States without sponsorship?" -> Do not infer YES from temporary employment authorization. Answer according to confirmed actual status; otherwise flag for manual review.
+- Combined current-authorization and future-sponsorship question -> Answer each component truthfully according to its wording. If any component is ambiguous or unsupported, flag for manual review.
+- Ambiguous or unusual wording -> manual review. Do not guess.
+
+For generated form-field files, include a `NOTE TO SELF - WORK AUTHORIZATION` block for any flagged question, clearly marked as not for pasting.
+
 ## Field type: self-introduction paragraph
 
 Usually 100–200 words, one paragraph, no formatting.

@@ -39,6 +39,68 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### SouthState CECL prepayment modeling
+**Source:** CV / LinkedIn - Quantitative Modeling Intern, SouthState Bank
+**What happened:** Built loan-level prepayment models for CECL forecasting using borrower, loan, and macroeconomic drivers, with validation and executive reporting.
+**Why it matters:** Can answer questions about model development, banking analytics, stakeholder communication, validation, and translating analytics into business use.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### SNTIMNT.AI reinforcement-learning pipeline modularization
+**Source:** CV / LinkedIn / Reference letter - Quantitative Research Engineer, SNTIMNT.AI
+**What happened:** Refactored reinforcement-learning trading work from notebooks into reusable modules and organized the training and evaluation workflow.
+**Why it matters:** Can answer questions about initiative, ambiguous projects, code organization, research-to-system transition, and startup execution.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### HMM market regime detection
+**Source:** CV - Machine Learning and Quantitative Research Engineer, SNTIMNT.AI
+**What happened:** Designed a Hidden Markov Model filter to classify market environments, achieving 0.83 out-of-sample regime identification recall.
+**Why it matters:** Can answer questions about quantitative research, model validation, volatility regimes, feature design, and measurable model performance.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### ETF portfolio replication and tax-loss harvesting simulation
+**Source:** CV / LinkedIn - Quantitative Research Assistant, Wake Forest University School of Business
+**What happened:** Built a Python simulation framework for tax-efficient ETF portfolio replication using 2007-2023 market data, constrained optimization, and Monte Carlo simulation.
+**Why it matters:** Can answer questions about independent research, portfolio modeling, constrained optimization, and communicating quantitative results.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Mortgage repayment and default modeling
+**Source:** CV - Graduate Model Developer, North Carolina State University
+**What happened:** Modeled mortgage repayment behavior, default risk, and MBS cash-flow timing using Cox models and Monte Carlo short-rate paths.
+**Why it matters:** Can answer questions about financial mathematics, survival analysis, credit risk, prepayment behavior, and applying theory to mortgage data.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### SDIC stochastic interest-rate calibration
+**Source:** CV - Quantitative Analytics Intern, SDIC Securities
+**What happened:** Implemented and calibrated Vasicek and CIR interest-rate models using maximum likelihood estimation on financial datasets.
+**Why it matters:** Can answer questions about stochastic modeling, model calibration, quantitative research workflows, and financial-market data analysis.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

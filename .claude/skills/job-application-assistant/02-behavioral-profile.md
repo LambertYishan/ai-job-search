@@ -8,47 +8,54 @@ framework_version: 1.0.0
 <!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Lambert Li's available source materials do not include a formal behavioral assessment. The observations below are inferred from the LinkedIn About section and a SNTIMNT.AI recommendation letter and should be reviewed before being treated as stable self-description.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Quantitative curiosity | High | Drawn to financial mathematics, machine learning, portfolio optimization, and risk modeling. *[Inferred from LinkedIn About / Reference letter - review before relying on this]* |
+| Initiative in ambiguity | High | Able to turn broad, early-stage project goals into organized research and implementation workflows. *[Inferred from LinkedIn About / Reference letter - review before relying on this]* |
+| Analytical discipline | High | Emphasizes testing, validation, diagnostics, and iterative improvement. *[Inferred from LinkedIn About / Reference letter - review before relying on this]* |
+| Business-context communication | Moderate to high | Makes an effort to connect technical work to business purpose and broader company direction. *[Inferred from LinkedIn About / Reference letter - review before relying on this]* |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Structured problem solving:** Turns uncertain quantitative problems into testable workflows, modular systems, and documented model diagnostics. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- **Self-motivated learning:** Willing to ask questions, refine methods, and learn through iteration in ambiguous environments. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- **Finance-aware technical thinking:** Connects machine learning and statistical modeling to trading, risk management, banking, and portfolio problems. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Early-stage or research-heavy environments where goals can be translated into practical experiments and reusable systems. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- Roles that combine quantitative finance, data, modeling, and business interpretation. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- Teams that value careful validation, clear documentation, and iterative improvement. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Formal production ownership depth:** Frame as strong research-to-prototype and deployment-support experience, with growing exposure to AWS-based workflows.
+- **Breadth outside finance:** Frame as domain-transfer potential from financial mathematics, risk modeling, and time-series decision systems.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- Quantitative research
+- Model validation
+- Risk modeling
+- Ambiguous problems
+- Cross-functional communication
+- Financial intuition
+- Iterative research
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- Pure maintenance work with little new modeling or analysis.
+- Roles with heavy non-technical operations and little quantitative depth.
+- Environments that require extensive unsupported claims without validation or documentation.
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Likely works well with managers who define business goals clearly while allowing analytical autonomy in methodology. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- Likely benefits from feedback on business priorities, model usefulness, and stakeholder communication, not only code output. *[Inferred from LinkedIn About / Reference letter - review before relying on this]*
+- Avoid assuming a preference for highly unstructured work without further confirmation; the source materials show comfort with ambiguity, but not unlimited ambiguity.
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Emphasize the ability to turn financial or market problems into tested quantitative workflows and communicate the business value.
+- **CV:** Lead with model development, validation, diagnostics, and deployment-support experience.
+- **Interviews:** Use SouthState prepayment modeling, SNTIMNT.AI pipeline modularization, and HMM regime detection examples.
+- **Don't overstate:** Do not claim a formal behavioral assessment, full production ownership beyond the source evidence, or expertise outside the documented finance/modeling context.
